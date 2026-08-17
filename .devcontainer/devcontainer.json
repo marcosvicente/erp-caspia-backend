@@ -1,0 +1,21 @@
+{
+  "name": "Rails Dev Container",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspaces/app",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "rubyLsp.rubyVersionManager": "none"
+      },
+      "extensions": [
+        "Shopify.ruby-lsp",
+        "misochid.vscode-rubocop",
+        "pantajoe.vscode-tailwindcss"
+      ]
+    }
+  },
+  "forwardPorts": [3000, 6379, 5432],
+  "postCreateCommand": "bundle install && bin/rails db:prepare",
+  "remoteUser": "root"
+}
