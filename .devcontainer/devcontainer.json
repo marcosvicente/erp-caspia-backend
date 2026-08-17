@@ -16,6 +16,6 @@
     }
   },
   "forwardPorts": [3000, 6379, 5432],
-  "postCreateCommand": "bundle install && bin/rails db:prepare",
+  "postCreateCommand": "bundle install ",
   "remoteUser": "root"
 }

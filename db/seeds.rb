@@ -7,3 +7,10 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+
+Apartment::Tenant.create('app')
+
+Apartment::Tenant.switch('app') do
+  # Create seed to tenant 'app'
+end
