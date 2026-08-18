@@ -1,0 +1,2 @@
+class MonthlyClosingsController < ApplicationController
+end

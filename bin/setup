@@ -22,8 +22,8 @@ FileUtils.chdir APP_ROOT do
 
   puts "\n== Preparing tenant =="
 
-  system! "bin/rails TenantConfig.create!(name: 'tenant1')"
-  system! "bin/rails Apartment::Tenant.create(name: 'tenant1')"
+  system! "bin/rails TenantConfig.create!(name: 'app')"
+  system! "bin/rails Apartment::Tenant.create(name: 'app')"
   
   puts "\n== Preparing database =="
   system! "bin/rails db:prepare"
