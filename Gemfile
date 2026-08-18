@@ -38,6 +38,15 @@ gem "image_processing", "~> 1.2"
 # Use Apartment for multi-tenancy support
 gem "ros-apartment", require: "apartment"
 
+# Use to manage money and currency in Rails applications
+gem "money-rails", "~> 1.13"
+
+
+group :development do
+  gem "annotate"
+end
+
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
@@ -50,4 +59,11 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+
+  gem "pry-rails", "~> 0.3.5"
+  gem "rspec-rails", "~> 8.0.0"
+  gem "factory_bot_rails", "~> 6.0"
+  gem "faker", "~> 2.0"
+  gem "database_cleaner-active_record", "~> 2.0"
+  gem "shoulda-matchers", "~> 6.0"
 end

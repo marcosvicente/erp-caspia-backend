@@ -6,7 +6,7 @@
 #
 # require 'apartment/elevators/generic'
 # require 'apartment/elevators/domain'
-require 'apartment/elevators/subdomain'
+require "apartment/elevators/subdomain"
 # require 'apartment/elevators/first_subdomain'
 # require 'apartment/elevators/host'
 
@@ -50,7 +50,7 @@ Apartment.configure do |config|
   #   end
   # end
   #
-  config.tenant_names = -> { ToDo_Tenant_Or_User_Model.pluck(:database) }
+  config.tenant_names = -> { TenantConfig.pluck(:name) }
 
   # PostgreSQL:
   #   Specifies whether to use PostgreSQL schemas or create a new database per Tenant.
@@ -102,7 +102,7 @@ Apartment.configure do |config|
   # Uncomment the line below if you want to enable this behavior.
   #
   # config.active_record_log = true
-  config.tenant_strategy = :schema
+  config.use_schemas = true
 end
 
 # Setup a custom Tenant switching middleware. The Proc should return the name of the Tenant that
