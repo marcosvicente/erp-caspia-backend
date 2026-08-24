@@ -63,7 +63,7 @@ group :development, :test do
   gem "pry-rails", "~> 0.3.5"
   gem "rspec-rails", "~> 8.0.0"
   gem "factory_bot_rails", "~> 6.0"
-  gem "faker", "~> 2.0"
+  gem "faker", "~> 3.8"
   gem "database_cleaner-active_record", "~> 2.0"
   gem "shoulda-matchers", "~> 6.0"
 end
