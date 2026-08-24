@@ -39,7 +39,7 @@ gem "image_processing", "~> 1.2"
 gem "ros-apartment", require: "apartment"
 
 # Use to manage money and currency in Rails applications
-gem "money-rails", "~> 1.13"
+gem "money-rails", "~> 3.0"
 
 
 group :development do
